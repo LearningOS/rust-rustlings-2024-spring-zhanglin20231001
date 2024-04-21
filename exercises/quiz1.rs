@@ -10,16 +10,16 @@
 // - If Mary buys more than 40 apples, each apple only costs 1 rustbuck!
 // Write a function that calculates the price of an order of apples given the
 // quantity bought. No hints this time!
-//
-// No hints this time ;)
 
 
 // Put your function here!
-fn calculate_price_of_apples(num:i32)->i32 {
+const  LESS_THAN_40:u32=2;
+const  MORE_THAN_40:u32=1;
+fn calculate_price_of_apples(num:u32)->u32 {
     if num>40 {
-        num
+        num * MORE_THAN_40
     }else{
-        num*2
+        num*LESS_THAN_40
     }
 }
 // Don't modify this function!
