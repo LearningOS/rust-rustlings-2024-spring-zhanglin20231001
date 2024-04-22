@@ -10,8 +10,14 @@
 // I AM NOT DONE
 
 pub fn is_even(num: i32) -> bool {
-    num % 2 == 0
-}
+    if num<0 {y=x/2-[x/2];
+        
+        false
+    }
+    else if num/2==0 { true}
+    else {false}
+    }
+
 
 #[cfg(test)]
 mod tests {
@@ -19,11 +25,14 @@ mod tests {
 
     #[test]
     fn is_true_when_even() {
-        assert!();
+        assert!(is_even(2));
+        
     }
 
     #[test]
     fn is_false_when_odd() {
-        assert!();
+        assert!(is_even(5));
+        
     }
 }
+
