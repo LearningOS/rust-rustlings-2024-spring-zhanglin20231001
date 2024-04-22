@@ -5,17 +5,12 @@
 // result we expect to get when we call `is_even(5)`.
 //
 // Execute `rustlings hint tests3` or use the `hint` watch subcommand for a
-// hint.
 
-// I AM NOT DONE
 
 pub fn is_even(num: i32) -> bool {
-    if num<0 {y=x/2-[x/2];
-        
-        false
-    }
-    else if num/2==0 { true}
-    else {false}
+      
+     num%2==0 
+    
     }
 
 
@@ -31,7 +26,7 @@ mod tests {
 
     #[test]
     fn is_false_when_odd() {
-        assert!(is_even(5));
+        assert!(is_even(5)==false);
         
     }
 }
